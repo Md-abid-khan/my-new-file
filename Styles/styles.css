@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
+body section{
+    margin: 50px auto;
+}
+
 /* navigation bar */
 
 .nav{
@@ -84,12 +88,18 @@ iframe{
 
 .target{
     gap: 24px;
+    
 }
 .box{
     width: 364px;
     height: 300px;
-    padding: 20px;
+    padding: 20px 20px;
     border-radius: 16px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    align-content: center;
+
 }
 .current-target{
     flex-direction: column;
@@ -120,6 +130,42 @@ iframe{
     gap: 20px;
 }
 
+/* support section */
+
+.support-section{
+    background-image: url(../assets/handshake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 48px;
+    /* border-radius: 16px; */
+    /* margin: 20px auto; */
+    /* text-align: center; */
+}
+.feed-btn-gap{
+    gap: 16px;
+    height: 57px;
+}
+.typing{
+    border-style: none;
+    border-radius: 8px;
+    padding: 20px 19px;
+    width: 500px;
+}
+.submit-btn{
+    padding: 20px 17px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+/* footer section */
+
+.footer-section{
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 @media screen and (max-width: 567px) {
@@ -128,8 +174,12 @@ iframe{
         align-items: center;
         margin-bottom: 15px;
     }
+    .development{
+        flex-direction: column;
+    }
     .developing{
         flex-direction: column;
+        margin-left: -120px;
     }
     #middle{
         margin: auto -20px;
@@ -148,5 +198,17 @@ iframe{
     .boxer{
         flex-direction: column;
         gap: 10px;
+    }
+    .feed-btn-gap{
+        flex-direction: column;
+    }
+    .typing{
+        width: auto;
+    }
+    .feed-btn-gap{
+        margin-bottom: 50px;
+    }
+    .footer-section{
+        flex-direction: column;
     }
 }
